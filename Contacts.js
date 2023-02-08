@@ -1,4 +1,3 @@
-// const readline = require("readline")
 const input = require("prompt-sync")();
 
 class Node
@@ -167,11 +166,11 @@ while (true)
         console.log("Contact added succesfully")
     } else if (choice == 2)
     {
-        phoneNumber = input("Enter phone number of the contact you want to delete : ")
+        let phoneNumber = input("Enter phone number of the contact you want to delete : ")
         c.deleteContact(phoneNumber)
     } else if (choice == 3)
     {
-        phoneNumber = input("Enter phone number of the contact you want to search : ")
+        let phoneNumber = input("Enter phone number of the contact you want to search : ")
         c.searchContact(phoneNumber)
     } else if (choice == 4)
     {
@@ -181,21 +180,7 @@ while (true)
         break
     }
 }
-// c.addContact("Asta", "123456", "asta@gmail.com")
-// c.addContact("Akash", "234567", "akash@gmail.com")
-// c.addContact("Ananaya", "345678", "ananya@gmail.com")
-// c.addContact("Beerus", "456789", "beerus@gmail.com")
-// c.addContact("Monkey D. Luffy", "235467", "Luffy@gmail.com")
-// c.addContact("Roronoa Zoro", "903409", "Zoro@gmail.com")
-// c.printContacts()
-// c.deleteContact("Ananaya", "345678");
-// c.deleteContact("Anaya", "345612");
-// c.deleteContact("ddsfdnanaya", "945678");
-// c.printContacts()
-// c.searchContact("mskffkta", "123453")
 
-// // var name = input("What is your name?")
-// // console.log(name)
 
 
 
